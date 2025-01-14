@@ -1,0 +1,36 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.pageButton {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pageButton:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  font-size: 14px;
+  color: #333;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  flex: 1;
+  flex-wrap: wrap;
+}

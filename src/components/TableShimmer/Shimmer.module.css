@@ -1,0 +1,45 @@
+.shimmerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  width: 475px;
+}
+
+.shimmerRow {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+}
+
+.shimmerCell {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  height: 20px;
+  width: 100px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.shimmerCell:nth-child(1) {
+  width: 60px;
+}
+
+.shimmerCell:nth-child(2) {
+  width: 100px;
+}
+
+.shimmerCell:nth-child(3) {
+  width: 150px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
